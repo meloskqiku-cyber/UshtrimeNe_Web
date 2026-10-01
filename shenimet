@@ -1,0 +1,38 @@
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<!-- Hiearkia e Heading(Titujve) -->
+<p>Parapgraph</p>
+<!-- Tagu i Paragrafit, perdoret per pershkrimin e nje dokumenti -->
+<a href="eventet.html">Eventet</a>
+<a href="https://fiek.uni-pr.edu/">FIEK</a>
+<!-- perdoret per linqe, duke perdorur href dhe duke ja shenuar linkun. -->
+<img src="images/silenthill.jpg" alt="FOTO e lojes SilentHill" />
+<!-- "src" perdoret per te shtuar nje foto ne link, ndersa alt perdoret ne qoftese nuk shtohet foto(e shton nje tekst mbi foto) -->
+<ul>
+  <li>Web Development Workshop</li>
+  <li>Programming Club</li>
+  <li>Career Day</li>
+</ul>
+<!-- kur nuk na nevojitet renditja e listes perdorim "ul" ndersa me li i shenojme ne forme te listet qe ne web dalin me bullet points -->
+<ol>
+  <li>Web Development Workshop</li>
+  <li>Programming Club</li>
+  <li>Career Day</li>
+</ol>
+<!-- dalin listat me numra dmth me renditje "ol" -->
+<ul>
+  <li>
+    Web Development Workshop
+    <ol>
+      <li>hi</li>
+      <li>bye</li>
+    </ol>
+  </li>
+  <li>Programming Club</li>
+  <li>Career Day</li>
+  <!-- lista me hierarki -->
+</ul>
