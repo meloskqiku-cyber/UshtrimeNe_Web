@@ -1,54 +1,39 @@
 <!doctype html>
-<html>
-  <head lang="sq">
-    <meta charset="UTF" />
-    <!-- //simbolet me na dal ne web (shkronja qe nuk i ka ne tastieren anglisht.)// -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- e mundeson qe madhesine e UI te jete e njejte ne te gjitha Browserat e ndryshem, si ne llaptop ne telefon etj. -->
-    <title>CampusHub</title>
+<html lang="sq">
+  <head>
+    <title>JavaScript</title>
   </head>
   <body>
-    <header>
-      <h1>CampusHub</h1>
-      <p>Discover Events, clubs and activites on the campus</p>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="clubs.html">clubs</a>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>Upcoming Events</h2>
-        <p>Discover upcoming events on Campus</p>
-        <a href="events.html">View all Events</a>
-        <ul>
-          <li>Web Development</li>
-          <li>Club Day</li>
-          <li>Career Day</li>
-        </ul>
-      </section>
-      <section>
-        <h2>University Club</h2>
-        <img src="" />
-      </section>
-      <section>
-        <h2>Career Day</h2>
-        <ol>
-          <li>Techonlogy</li>
-          <li>MicroBiology</li>
-          <li>Physics</li>
-        </ol>
-        <img src="Images/silenthill.jpg" alt="Foto e nje Loje" />
-        <a
-          href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMsrLMzNg9OIuzsxJzStRyMjMyQEAU9AHYw&q=silent+hill&oq=silent&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDINCAIQLhiDARixAxiABDINCAMQLhiDARixAxiABDIKCAQQLhixAxiABDIKCAUQLhixAxiABDIKCAYQABixAxiABDIKCAcQLhixAxiABDIKCAgQLhixAxiABNIBCDI0OTFqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8"
-          >KLIKO</a
-        >
-      </section>
-    </main>
+    <h1>Hyrje në JavaScript</h1>
+    <p id="message">Old message</p>
+    <button onclick="changeMessage()">Change message</button>
+    <img id="eventImage" src="../images/logo.svg" width="300" />
 
-    <footer>
-      <p>&copy; 2026 Campus Hub</p>
-    </footer>
+    <button onclick="showMessage()">Click me</button>
+
+    <p
+      onmouseover="this.style.color = 'red'"
+      onmouseout="this.style.color = 'black'"
+    >
+      Move your mouse over this text!
+    </p>
+
+    <select onchange="showSelection(this.value)">
+      <option value="">Choose an event</option>
+      <option value="Workshop">Workshop</option>
+      <option value="Career Day">Career Day</option>
+    </select>
+
+    <input type="text" onkeydown="console.log('A key was pressed!')" />
+
+    <form onsubmit="showMessage()">
+      <input type="text" placeholder="Your name" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      console.log("Hello JavaScript!");
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
